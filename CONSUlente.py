@@ -19,7 +19,9 @@ from telegram.ext import (
 
 from apscheduler.schedulers.asyncio import AsyncIOScheduler
 
-TOKEN = "8601723788:AAGpGzXT4EqYlluivPVwSu2nQssQiMtD-vQ"
+# TOKEN = "8601723788:AAGpGzXT4EqYlluivPVwSu2nQssQiMtD-vQ"
+import os
+TOKEN = os.getenv("TOKEN")
 CHAT_ID = None
 DB_NAME = "spese.db"
 
